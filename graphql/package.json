@@ -1,0 +1,26 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "POC",
+  "main": "server.js",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.5.0",
+    "apollo-server": "^2.6.3",
+    "graphql": "^14.3.1",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.18.7"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon --inspect=0.0.0.0 ./server.js",
+    "start:prod": "node ./server.js"
+  }
+}

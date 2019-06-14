@@ -1,0 +1,28 @@
+mappings:
+  tanker-products: "http://tanker.internal.b2w.io/multiProducts"
+  tanker-offer: "http://tanker.internal.b2w.io/offer"
+  tanker-installments: "http://tanker.internal.b2w.io/installments"
+
+queries:
+  test:
+    performance:
+      - |
+        from tanker-products
+            with 
+                responseTime = 1000
+            only 
+                id
+                name
+        from tanker-offer
+            with 
+                tanker-products.id = tanker-products.id
+                responseTime = 1000
+            only 
+                id
+                price
+        from tanker-installments
+            with 
+                product-id = tanker-offer.id
+                responseTime = 1000
+            only 
+                installments
