@@ -16,7 +16,7 @@ Being a key component between clients and APIs, a middleware solution should add
 
 ![99 percentile response time](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=660505214&format=image)
 
-As shown above, under small load, restQL and Apollo response times are pretty similar. However when the load increases (from 40 queries/sec in our example) we see a spike in Apollo response time whilst restQL remains stable. The difference is bigger when we consider the 99 percentile (restQL is about 6,5x faster).  
+As shown above, under small load, restQL and Apollo response times are pretty similar. However when the load increases (from 40 queries/sec in our example) we see a spike in Apollo response time whilst restQL remains stable. The difference is bigger when we consider the 99 percentile (restQL is about 6,5x faster under heavy load).  
 
 ## Test setup
 
