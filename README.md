@@ -4,12 +4,27 @@ The environment used was one C5.large AWS instance which has the simplest config
 
 We’ve used open source [vegeta](https://github.com/tsenart/vegeta) for the load test. All the code and artifacts used in the tests are included in this repo.
 
+### Reliency
+
+Being a key component between clients and APIs, resiliency needs to play a key role in a solution like restQL or GraphQL. Below we compare the success and error rate between both solutions.
+
+![Successfull responses](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=1261108315&format=image)
+
+![Error responses](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=1002516891&format=image)
+
+As shown above, under heavy load, restQL returns 10X more successfull responses than Apollo.
+
 ## Response time results
 
-### Average time
+Being a key component between clients and APIs, should add as few overhead as possible. Below we compare the response time between restQL and Apollo GraphQL.
 
-Average response time by load
+![Average response time](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=1622668985&format=image)
 
-## Success responses percent
+![99 percentile response time](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=660505214&format=image)
 
-Average success by load
+
+
+
+
+
+
