@@ -16,7 +16,7 @@ As shown above, under heavy load, restQL returns 10X more successfull responses 
 
 ## Response time results
 
-Being a key component between clients and APIs, should add as few overhead as possible. Below we compare the response time between restQL and Apollo GraphQL.
+Being a key component between clients and APIs, a middleware solution should add as few overhead as possible. Below we compare the response time between restQL and Apollo GraphQL.
 
 ![Average response time](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuM9L7z60rDmjctuZzG4KdOD41JMwzXdwt_J-MyJYTpwi_TS4XjvkLwhrR3IK4rrBdj-J3kGWtSnu1/pubchart?oid=1622668985&format=image)
 
