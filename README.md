@@ -6,6 +6,8 @@ We’ve used open source [vegeta](https://github.com/tsenart/vegeta) for the loa
 
 ## Response time results
 
+### Average time
+
 Average response time by load
 
 ## Success responses percent
